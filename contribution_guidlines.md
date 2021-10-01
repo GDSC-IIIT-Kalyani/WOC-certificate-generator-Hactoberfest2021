@@ -1,7 +1,7 @@
 ## Contributing Guidelines:
 
 
-2. These are the ways you can contribute to this repository.
+1. These are the ways you can contribute to this repository.
    * Create a html and css page to collect info of user through html form using java script
    * e-mail related code work shold be done on its exclusive branch.
    * improve UI when available.
