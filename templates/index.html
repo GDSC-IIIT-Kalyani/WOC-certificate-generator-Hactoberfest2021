@@ -1,32 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>Certificate maker</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+       <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
-<div class="container" style="padding-top: 5rem;">
-  <h1 class= "display-1">WOC-certificate-generator</h1>
-  <hr>
-  <form action="/form" method="POST" style="padding-top: 2rem;">
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter your email to get the certificate" aria-describedby="emailHelp">
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+}
+@media(max-width:1025px){
+    .container{
+        width: 450px;
+        height: 600px;
+    }
+    section .color:nth-child(1){
+        max-width: 250px;
+    }
+}
+@media (max-width:400px){
+    section .color:nth-child(1){
+        top: 175px;
+        max-width: 250px;
+        max-height: 70px;
+        height: 20px;
+        opacity: 40%;
+    }
+    section .color:nth-child(2){
+        top: 300px;
 
+        width: 50px;
+        height: 20px;
+        opacity: 70%;
+    }
+    section .color:nth-child(3){
+        top: 200px;
+        right: 50%;
+        max-width: 250px;
+        height: 20px;
+        opacity: 30%;
+    }
+    .square{
+        visibility: hidden;
+    }
+}
+@media(max-width:600px){
+    section .color:nth-child(1){
+        top: 20px;
+        max-width: 300px;
+        height: 300px;
+}
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+}
+.logo img{
+    margin: 0px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.logo h2{
+    margin:5px;
+    font-size: 34px;
+    background: black;
+    color: white;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1){
+    top: 10%;
+    width: 400px;
+    height: 400px;
+    background: #2349f3;
+}
+section .color:nth-child(2){
+    bottom: -250px;
+    left: -150px;
+    width: 55%;
+    min-width: 300px;
+    height: 80%;
+    background: rgb(71, 250, 232);
+}
+section .color:nth-child(3){
+    bottom: -10px;
+    right: 200px;
+    width: 350px;
+    height: 400px;
+    background: #fa20fa;
+}
+section .color:nth-child(4){
+    left: 20px;
+    top:50px;
+    background: transparent;
+    width: 200px;
+    height: 250px;
+}
+.box{
+    position: relative;
+}
+.container{
+    align-items: center;
+    position: relative;
+    width: 25%;
+    height: 70%;
+    min-width: 250px;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(167, 64, 64, 0.1);
+    border-bottom: 1px solid rgb(207, 201, 201);
+}
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.box h2{
+    position: relative;
+    color: black;
+    font-size: 28px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.box h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: black;
+}
+.box .inputbox{
+    width: 100%;
+    margin-top: 20px;
+}
+.box .inputbox input{
+    width: 300px;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(173, 157, 157);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+}
+.box .inputbox input::placeholder{
+    color: rgb(107, 98, 98);
+}
+.box .inputbox input[type="submit"]{
+    background: #fff;
+    color: #666;
+    max-width: 100px;
+    cursor: grab;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.box{
+    position: relative;
+}
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(167, 64, 64, 0.1);
+    border-bottom: 1px solid rgb(207, 201, 201);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+.box .square:nth-child(1){
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+.box .square:nth-child(2){
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+.box .square:nth-child(3){
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+.box .square:nth-child(4){
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+.box .square:nth-child(5){
+    top: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</body>
+       </style>
+    </head>
+    <body>
+        <div class="logo" style="background: black;">
+            <img src="woc.png" style="width: 60px;">
+            <h2>WINTER OF CODE</h2>
+        </div>
+        <section>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="container">
+                <div class="box">
+                    <div class="square" style="--i:0;"></div>
+                    <div class="square" style="--i:1;"></div>
+                    <div class="square" style="--i:2;"></div>
+                    <div class="square" style="--i:3;"></div>
+                    <div class="square" style="--i:4;"></div>
+                    <h2>Owner Details.</h2>
+                    <form action="/form" method="POST">
+                        <div class="inputbox">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        </div>
+                       
+                        <div class="inputbox">
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter your email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" id ="submit" value="Send" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
