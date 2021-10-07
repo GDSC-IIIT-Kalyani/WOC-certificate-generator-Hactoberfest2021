@@ -25,25 +25,32 @@
                     <div class="square" style="--i:3;"></div>
                     <div class="square" style="--i:4;"></div>
                     <h2>Student Details</h2>
-                    <form>
+                    <form method="POST" class="contact-form">
                         <div class="inputbox">
-                            <input type="text" placeholder="Name">
+                            <input type="text" id = "Name" placeholder="Name">
                         </div>
                         <div class="inputbox">
-                            <input type="text" placeholder="Roll No">
+                            <input type="text" id = "RollNo" placeholder="Roll No">
                         </div>
                         <div class="inputbox">
-                            <input type="text" placeholder="Registration No">
+                            <input type="text" id = "RegNo" placeholder="Registration No">
                         </div>
                         <div class="inputbox">
-                            <input type="email" placeholder="Email">
+                            <input type="email" id = "Email" placeholder="Email">
                         </div>
                         <div class="inputbox">
-                            <input type="submit" value="Send">
+                            <input type="submit" id ="submit" value="Send" >
                         </div>
                     </form>
                 </div>
             </div>
         </section>
     </body>
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/email.js"></script>
 </html>
