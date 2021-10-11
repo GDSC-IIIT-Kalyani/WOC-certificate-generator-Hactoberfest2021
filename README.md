@@ -10,8 +10,8 @@ Python code to generate and emails certificates automatically , using name fille
 3. Just change the following lines in `main.py` with your dummy gmail accounts
 ```python
  # Enter your email and password  from which you want to sent the image
-    Your_email = "dummy"
-    Your_Password = "dummy"
+    Your_email = "dummy email"
+    Your_Password = "dummy password"
 ```
 4. Now you can run the `main.py` to get started
 
