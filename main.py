@@ -1,9 +1,7 @@
 from flask import Flask,render_template,request
-
 from PIL import Image as a1
 from PIL import ImageDraw as a2
 from PIL import ImageFont as a3
-
 
 import imghdr
 import smtplib

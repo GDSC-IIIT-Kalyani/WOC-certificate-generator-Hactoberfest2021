@@ -19,7 +19,16 @@ Python code to generate and emails certificates automatically , using name fille
 
 # Steps for contributing
 
-1. Look out for changes you think would help in the bettering the experience of the user, improve the code base, add documentation wherever neccessary
-2. If you find some issues you can report them.
-3. You can make pull requests.
-4. Look out for issues marked with the Hakctober tag to make your contribution count for the hacktoberfest 2021.
+1. Finding Issues
+   The first step to open source contributions is to find apt issues that you would be able to resolve.
+2. Understanding the Rules:
+   Even though the process of contributing is fundamentally the same, it can differ slightly from project to project.
+3. Making Changes.
+   Now that you have found the issue you want to resolve as well as read the rules and guidelines, it is time to actually code and fix the issue!
+   If you find some issues you can report them.
+4. Pushing Changes and Submitting
+   Once done editing, you need to push your changes to your personal copy stored on GitHub.
+5. Create pull request
+   You have just made your first pull request, and if your changes are approved they will be merged with the official repository!
+6. Look out for issues marked with the Hakctober tag to make your contribution count for the Finding
+   Issues.
