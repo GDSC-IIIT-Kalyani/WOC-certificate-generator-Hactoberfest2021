@@ -47,7 +47,7 @@ def form():
         image_type = imghdr.what(f.name)
         image_name = f.name
     
-    file_attachements = [r'./cert_save_folder/',name,'.jpg']
+    file_attachements = [r'./cert_save_folder/'+name+'.jpg']
     
 
     emailMsg = 'Three files attached'
@@ -79,5 +79,7 @@ def form():
     return render_template("result.html")
  return render_template("index.html")
 
+    
 if __name__ == "__main__":
     app.run(debug=True)
+
