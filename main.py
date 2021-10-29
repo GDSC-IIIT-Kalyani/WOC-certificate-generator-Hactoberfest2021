@@ -37,6 +37,7 @@ def form():
  font = a3.truetype('arial.ttf', 65)
  for i in range(0,winners):
    if(code == codes[i]):
+    codes[i] = ran.randint(8485,904356)
     ay1 = a1.open('sample_cert.jpg')
     draw = a2.Draw(ay1)
     draw.text(xy=(401, 234), text='{}'.format(name), fill=(0, 0, 0), font=font)
