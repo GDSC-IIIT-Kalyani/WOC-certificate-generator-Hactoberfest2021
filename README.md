@@ -36,12 +36,12 @@ git clone https://github.com/<your-github-username>/WOC-certificate-generator-Ha
 cd WOC-certificate-generator-Hactoberfest2021
 ```
  4. You must have `Python >= 3.9.1`
- 5. pip install required packages.
+ 5. Now you want to install this packages by using pip.
  ```
  pip install -r requirements.txt
  ```
- 6. Now you can run the `main.py` to get started. Then open live server and fill details to get Winter of code 2.0 certificate
-
+ 6. Now you can run the `main.py` to get started. 
+ 7. Then open live server and fill details to get Winter of code 2.0 certificate.
 
 
 # ✨ Contributors
@@ -49,3 +49,8 @@ cd WOC-certificate-generator-Hactoberfest2021
 <a href="https://github.com/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021" />
 </a>
+
+<div align="center">
+ <img src="https://forthebadge.com/images/badges/built-by-developers.svg" alt="love" />
+</div>
+
