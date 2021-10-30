@@ -1,5 +1,5 @@
 # WOC-certificate-generator
-<div align="center">Python code to generate and emails certificates automatically , using name filled in the form.</div>
+<div align="center">Python code to generate emails certificates automatically , using name filled in the form.</div>
 
 <br>
 <div align="center">
@@ -17,7 +17,11 @@
 
 # Installation
 
+<div align="center">
+
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021?logo=github)](https://GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend/) [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021?color=bluevoilet&logo=github)](https://github.com/GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend/commits/) [![GitHub repo size](https://img.shields.io/github/repo-size/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021?logo=github)](https://github.com/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021)
+
+</div>
 
  1. You must have `Python >= 3.9.1`
  2. pip install required packages.
