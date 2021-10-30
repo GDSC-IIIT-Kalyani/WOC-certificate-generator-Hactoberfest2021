@@ -20,5 +20,5 @@ Python code to generate and emails certificates automatically , using name fille
 # ✨ Contributors
 
 <a href="https://github.com/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend" />
+  <img src="https://contrib.rocks/image?repo=GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021" />
 </a>
