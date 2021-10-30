@@ -1,5 +1,6 @@
 # WOC-certificate-generator
-Python code to generate and emails certificates automatically , using name filled in the form.
+<div align="center">Python code to generate and emails certificates automatically , using name filled in the form.</div>
+
 <br>
 <div align="center">
 
@@ -8,6 +9,10 @@ Python code to generate and emails certificates automatically , using name fille
 ![Stars](https://img.shields.io/github/stars/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021?style=flat&logo=github)
 ![Forks](https://img.shields.io/github/forks/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021?style=flat&logo=github)
 
+</div>
+
+<div align="center">
+  <img height=240 src="./src\assets\images\GDSC_Logo.png" alt="WinterCode_logo">
 </div>
 
 # Installation
@@ -19,7 +24,7 @@ Python code to generate and emails certificates automatically , using name fille
  ```
  pip install -r requirements.txt
  ```
- 3. Now you can run the `main.py` to get started
+ 3. Now you can run the `main.py` to get started. Then open live server and fill details to get Winter of code 2.0 certificate
 
 
 
