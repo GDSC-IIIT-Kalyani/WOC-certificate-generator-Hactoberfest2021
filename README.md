@@ -23,12 +23,24 @@
 
 </div>
 
- 1. You must have `Python >= 3.9.1`
- 2. pip install required packages.
+1. Fork <a href="https://github.com/GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021" title="this">this</a> repository.
+2. Clone the **forked** repository.
+
+```yml
+git clone https://github.com/<your-github-username>/WOC-certificate-generator-Hactoberfest2021
+```
+
+3. Navigate to the project directory.
+
+```py
+cd WOC-certificate-generator-Hactoberfest2021
+```
+ 4. You must have `Python >= 3.9.1`
+ 5. pip install required packages.
  ```
  pip install -r requirements.txt
  ```
- 3. Now you can run the `main.py` to get started. Then open live server and fill details to get Winter of code 2.0 certificate
+ 6. Now you can run the `main.py` to get started. Then open live server and fill details to get Winter of code 2.0 certificate
 
 
 
