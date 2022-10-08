@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Form</title>
-        <link rel="stylesheet" href ="./static/FormCSS.css">
+        <link rel="stylesheet" href ="./static/form.css">
+        <!-- <link rel="stylesheet" href ="./static/FormCSS.css"> -->
          <link rel="icon" href="static/woc.png">
     </head>
     <body>
-        <div class="logo" style="background: black;">
+        <!-- <div class="logo" style="background: black;">
             <img src="../static/woc.png" style="width: 60px;">
             <h2>WINTER OF CODE</h2>
         </div>
@@ -43,6 +44,58 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+
+
+        <img id="logo" src="logo.png" alt="">
+        <!-- <img src="https://cdn.dribbble.com/users/77121/screenshots/17351288/media/5b4277bf11b4c0911f06e20d651f97e6.gif" alt=""> -->
+        <div class="container" style="z-index: 1;">
+           <div class="main" style="z-index: 2;"> <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Log in</h1>
+    
+            <div class="email">
+             <!-- <p><strong>Email <br> </strong>  </p> -->
+             <p>Need an account? <a href="#">  <span class="signup" style="color: rgb(94, 94, 221);padding: 42px;">      Sign Up</span></a> </p> 
+            </div>
+            <input type="text" placeholder="E-mail">
+            <br>
+     
+             <!-- <div class="password">
+                
+             <p><strong>Password <i class="fa fa-key"></i> </strong></p> <i id="show" class="fa fa-eye" aria-hidden="true"> Show</i> <br>
+             
+    
+            </div> -->
+    
+    
+            <div class="wrapper">
+                <p><strong>Password<i class="fa fa-key"></i> </strong></p> <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()">Show</i><br>
+                
+            
+            </div>
+            <input type="Password" placeholder="Password" id="password"!important> 
+             <!-- <input type="text"> -->
+     <br><br>
+             <button>Log in</button>
+     </div>
+        </div>
+        <script>
+            var state= false;
+            function toggle(){
+                if(state){
+                    document.getElementById("password").setAttribute("type","password");
+                    document.getElementById("eye").style.color='#7a797e';
+                    state = false;
+                }
+                else{
+                    document.getElementById("password").setAttribute("type","text");
+                    document.getElementById("eye").style.color='#5887ef';
+                    state = true;
+                }
+            }
+        </script>
+
+
+
     </body>
 </html>
