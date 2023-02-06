@@ -32,7 +32,7 @@ googleapis-common-protos==1.53.0
 grpcio==1.39.0
 httplib2==0.19.1
 idna==3.2
-oauthlib==3.1.1
+oauthlib==3.2.2
 packaging==21.0
 proto-plus==1.19.0
 protobuf==3.17.3
